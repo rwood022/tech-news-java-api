@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!--layout:decorate="~{layout}, designates that the homepage HTML file will be bound to layout.html.-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+<head>
+  <title>Homepage</title>
+</head>
+
+<body>
+<!--layout:fragment="content" defines which specific content from the homepage.html page will be displayed on layout.html. We'll use this content section in the template pages to be displayed in the layout.html page.-->
+
+<!--Inside <li>, in the <ol> element, is a Thymeleaf for loop. This states that Thymeleaf should iterate over each post inside ${postList}, creating a list item (<li>) for each iteration and giving them all a class of post-list.-->
+<div layout:fragment="content">
+  <ol>
+    <li th:each="post : ${postList}" class="post-list">
+      <div th:insert="fragments/post-fragment :: post-fragment"></div>
+    </li>
+  </ol>
+</div>
+
+</body>
+</html>
