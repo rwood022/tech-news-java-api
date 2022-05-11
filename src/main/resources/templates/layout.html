@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--specifying the Thymeleaf namespace definitions and allowing you to use Thymeleaf syntax in the document.-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--    ensure that the title changes with the templates that we bring in-->
+    <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">Just Tech News</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <h1>
+            <a href="/">Just Tech News</a>
+        </h1>
+        <nav>
+<!--th:if= is a conditional statement from Thymeleaf. The if statement will render HTML elements based on a provided condition; in the first div, that condition is that the user is logged in.  -->
+            <div th:if="${loggedIn}">
+                <a th:href="@{/dashboard}">dashboard</a>
+                <a th:href="@{/users/logout}">logout</a>
+            </div>
+<!-- th:unless, the next part of the if statement. If the condition isn't met and it returns false, the user will be directed to the login page, where they can satisfy the condition. This functions exactly like the {{#if author}} syntax from Handlebars.js.       -->
+            <div th:unless="${loggedIn}">
+<!--  The th:href syntax will dynamically change the <a> element's href values based on the evaluation of the if conditionals. If a user is logged in, they'll see the dashboard and logout links in their nav. If they're not logged in, they'll only have the login link available.          -->
+                <a th:href="@{/login}">login</a>
+            </div>
+        </nav>
+    </header>
+<!--layout:fragment="content"—the most important piece—will allow other templates to be displayed in this section of the page. This functions much like {{{ body }}} in Handlebars.js, which would designate where we'd inject the partials.
+-->
+    <main layout:fragment="content">
+        <p>This is filled by the content template.</p>
+    </main>
+
+    <footer>
+        Thanks for visiting!
+    </footer>
+</div>
+
+</body>
+</html>
