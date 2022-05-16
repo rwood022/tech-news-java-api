@@ -11,3 +11,10 @@ I refactored an existing web application to use Java and Thymeleaf for the front
 ## Visuals
 
 <img width="1440" alt="Screen Shot 2022-05-14 at 11 12 48 PM" src="https://user-images.githubusercontent.com/93175265/168691049-e72e71d3-dc4e-4df5-847c-eafcd9c77abd.png">
+
+<img width="1440" alt="Screen Shot 2022-05-14 at 11 13 23 PM" src="https://user-images.githubusercontent.com/93175265/168692367-2d4a0296-e245-42f1-a430-7ee7aa943838.png">
+
+<img width="1440" alt="Screen Shot 2022-05-14 at 11 15 27 PM" src="https://user-images.githubusercontent.com/93175265/168692395-998c2199-0c80-4224-9ec0-94d936ee6420.png">
+
+<img width="1440" alt="Screen Shot 2022-05-14 at 11 13 14 PM" src="https://user-images.githubusercontent.com/93175265/168692410-2de07072-00e9-4154-903f-3dd057465dea.png">
+
