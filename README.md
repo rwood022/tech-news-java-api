@@ -10,4 +10,4 @@ I refactored an existing web application to use Java and Thymeleaf for the front
 
 ## Visuals
 
-
+<img width="1440" alt="Screen Shot 2022-05-14 at 11 12 48 PM" src="https://user-images.githubusercontent.com/93175265/168691049-e72e71d3-dc4e-4df5-847c-eafcd9c77abd.png">
