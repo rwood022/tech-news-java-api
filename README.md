@@ -18,3 +18,6 @@ I refactored an existing web application to use Java and Thymeleaf for the front
 
 <img width="1440" alt="Screen Shot 2022-05-14 at 11 13 14 PM" src="https://user-images.githubusercontent.com/93175265/168692410-2de07072-00e9-4154-903f-3dd057465dea.png">
 
+## Contact
+
+Please contact me at rwood022@gmail.com if you have any questions!
